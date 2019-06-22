@@ -1,0 +1,44 @@
+#container {
+  width: 100%;
+  clear: both;
+  text-align: center; 
+  
+}
+#content {
+	text-align: center; 
+	width: 100%;
+}
+/*#content input {
+  width: 100%;
+  clear: both;
+  display: table-cell; 
+}*/
+form  { 
+	display: inline-table;  
+	text-align: center; 
+
+}
+p     { 
+	display: table-row;  
+}
+label { 
+	display: table-cell; 
+	width : 110px;
+}
+/*input { 
+	display: table-cell; 
+}*/
+button {
+	align-items: center;
+}
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 40%;
+}
+#divform {
+	align-items: center;
+}

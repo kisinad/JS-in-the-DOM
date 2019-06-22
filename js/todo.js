@@ -11,3 +11,8 @@ anotherTodo.textContent = 'Pay bills';
 parentNode.insertBefore(newNode, nextSibling);
 // Add new to-do to the beginning of the list
 todoList.insertBefore(anotherTodo, todoList.firstElementChild);
+const modifiedTodo = document.createElement('li');
+modifiedTodo.textContent = 'Feed the dog';
+parentNode.replaceChild(newNode, oldNode);
+// Replace existing to-do with modified to-do
+todoList.replaceChild(modifiedTodo, todoList.children[2]);
