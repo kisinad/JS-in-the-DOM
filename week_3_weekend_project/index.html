@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Contact Form</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<!-- <div id="container"> -->
-		<div id="content">
-			<div >
-				<h1>Contact Form</h1> 
-			</div>
-			
-			<div id="divform">
-				<h2>Add a new contact</h2>
-				<form id="form" action="">
-
-					<p>
-						<label for="a">First name:</label>
-						<input type="text" name="first_name" placeholder="First name">
-					</p>
-					<p>
-						<label for="a">Second name:</label>
-						<input type="text" name="second_name" placeholder="Second name">
-					</p>
-					<p>
-						<label for="a">Phone Number:</label>
-						<input type="number" name="phone_number" placeholder="Phone Number">
-					</p>
-					<p>
-						<label for="a">Email:</label>
-						<input type="email" name="email" placeholder="Email">
-					</p>
-					<p>
-						<label for="a">Address:</label>
-					<input type="text" name="address" placeholder="Address">
-					</p>
-					
+	<head>
+		<meta charset="utf-8">
+		<title>Contact Form</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+	</head>
+	<body>
+		<div id="main"> 
+			<div id="content">
+				<div >
+					<h1>Contact Form</h1> 
+				</div>
 				
-					<div class="savediv">
-   		 				<button onclick="saveContact()">Save</button>
-   		 				
-					</div>
+				<div id="divform">
+					<h2>Add a new contact</h2>
+					<form id="form" onsubmit="return contact_function()">
+						<label>
+							<small class="rq">*</small>
+							First name:
+							<input type="text" id="fname" name="first_name" placeholder="Your first name">
 
-				
+						</label>
+
+						<label>
+							<small class="rq">*</small>
+							Second name:
+							<input type="text" id="sname" name="second_name" placeholder="Your second name">
+						</label>
+
+						<label>
+							Phone Number:
+							<input type="tel" id="tel" name="phone_number" placeholder="Your phone Number">
+						</label>
+
+						<label>
+							Email:
+							<input type="email" id="email" name="email" placeholder="Your Email">
+						</label>
+
+						<label>
+							Address:
+							<input type="text" id="address" name="address" placeholder="Your Address" >
+						</label>
+						<br>
+							
+						<button type="submit" id="save-id">
+							Save
+						</button>
+						
+					</form>
 					
 
-				</form>
+				</div>
+				<div id="search">
+					<h2>Search contact</h2>
+					<form class="example" onsubmit="search_function()">
+	  					<input type="text" id="search-id" placeholder="Enter Contact name.." name="search"><br>
+	  					<button type="submit" id="search-id">Search</button>
+					</form>
+				</div>
 			</div>
 		</div>
-	<!-- </div> -->
+			
+		<script type="text/javascript" src="JS/scripts.js" charset="utf-8"></script>
 		
-	
-<script type="text/javascript" scr="index.js"></script>
-</body>
+	</body>
+
 </html>
