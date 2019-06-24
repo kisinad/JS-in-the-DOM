@@ -1,15 +1,31 @@
 
+//Styles the H1
 var h1 = document.querySelector("h1");
 h1.style.color = "#900C3F";
 h1.style.textAlign="center";
 
+//var fname = document.querySelector("#fname").value;
+// var sname = document.querySelector("#sname");
+// var tel = document.querySelector("#tel");
+// var email = document.querySelector("#email");
+// var address = document.querySelector("#address");
+// fname.addEventListener("input", input_function());
+// function input_function(e) {
+//     fname = document.querySelector("#fname").value;
+// 	//alert(fname);
+// 	sname = document.querySelector("#sname").value;
+// 	tel = document.querySelector("#tel").value;
+// 	email = document.querySelector("#email").value;
+// 	address = document.querySelector("#address").value;
 
+// }
+// Function stores variable on clicking save
 function contact_function() {
 	fname = document.querySelector("#fname").value;
 	//alert(fname);
 	sname = document.querySelector("#sname").value;
 	tel = document.querySelector("#tel").value;
-	email = document.querySelector("#email").value.indexOf("@");
+	email = document.querySelector("#email").value;
 	address = document.querySelector("#address").value;
 	//Submitted = "true";
 
@@ -37,10 +53,10 @@ function contact_function() {
  	// }
 
  	//var denis = new contact_function(fname, sname, tel, email, address);
-	contact_function.prototype.fullName = function ()
-	{
-	log (document.body.appendChild(fname));
-	};
+	// contact_function.prototype.fullName = function ()
+	// {
+	// log (document.body.appendChild(fname));
+	// };
 	
 
 	alert("Saved!");
@@ -51,6 +67,7 @@ function contact_function() {
  //  	txtOutput.value = "Hi there, " + name + "!";
 
 }
+//Function to search through saved contacts
 function search_function(){
 	// var fname = document.querySelector("#fname").value;
 	//var contactlist = document.getElementById("first_name")
@@ -58,7 +75,9 @@ function search_function(){
  	// var txtOutput = document.getElementById("txtOutput");
   // 	var name = fname.value;
   // 	txtOutput.value = "Hi there, " + name + "!";
-  alert(fname.textContent);
+  var div = document.createElement("div");
+  div.innerHTML = fname;
+  contactFields.appendChild(div);
 }
 
 // const test1 = () =>{

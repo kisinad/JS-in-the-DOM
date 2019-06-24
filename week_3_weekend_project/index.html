@@ -11,7 +11,7 @@
 				<div >
 					<h1>Contact Form</h1> 
 				</div>
-				
+				<!-- Create new div contact form -->
 				<div id="divform">
 					<h2>Add a new contact</h2>
 					<form id="form" onsubmit="return contact_function()">
@@ -52,12 +52,18 @@
 					
 
 				</div>
+				<!-- Create new search field form -->
 				<div id="search">
 					<h2>Search contact</h2>
 					<form class="example" onsubmit="search_function()">
-	  					<input type="text" id="search-id" placeholder="Enter Contact name.." name="search"><br>
+	  					<!-- <input type="text" id="search-id" placeholder="Enter Contact name.." name="search"> -->
+	  					<div id="contactFields"></div>
+	  					<br>
 	  					<button type="submit" id="search-id">Search</button>
+	  					<!-- <input type = "text" id = "txtOutput" /> -->
 					</form>
+
+
 				</div>
 			</div>
 		</div>
